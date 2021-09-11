@@ -1,18 +1,21 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
 *{
     margin: 0;
     padding: 0;
 }
 body{
     background-color:hsl(185, 75%, 39%);
-    color:hsl(229, 23%, 23%);
-    font-family: url("https://fonts.google.com/specimen/Kumbh+Sans");
+    color:hsl(227, 10%, 46%);
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
 }
 .bg-top{
     position: fixed;
     top:0;
     left:0;
-    width: 60vw;
-    height: 60vh;
+    width: 55vw;
+    height: 55vh;
     z-index:-1;
     background-image: url("./images/bg-pattern-top.svg");
     background-position: bottom right;
@@ -21,8 +24,8 @@ body{
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 60vw;
-    height: 60vh;
+    width: 55vw;
+    height: 55vh;
     z-index:-1;
     background-image: url("./images/bg-pattern-bottom.svg");
     background-position: top left;
@@ -35,7 +38,53 @@ main{
     justify-content: center;
 }
 .container{
+    width: 340px;
+
     background-color: white;
     border-radius: 12px;
 }
+.upper-container{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-image: url("./images/bg-pattern-card.svg");
+    height:130px;
+    margin-bottom: -50px;
+}
+.card{
+    color:inherit;
+    position: inherit;
+}
+.profile-picture{
+    border:8px solid white;
+    border-radius: 50%;
+}
+.name{
+    color:hsl(229, 23%, 23%);
+    font-size:18px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.about{
+    margin-bottom: 10px;
+}
+.location{
+    margin-bottom: 30px;
+}
+span{
+    font-weight: 400;
+    font-size:18px;
+}
+hr{
+    color:hsl(0, 0%, 59%);
+}
+.stat-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.stat-container>div{
+    margin:30px;
+}
+
 
